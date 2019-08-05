@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+      <p id="description">Let us know how we can improve ABSU Community</p>
+      <form id="survey-form"
+        action="http://www.gmail.com/fabianuzukwu"
+        method="get"
+      >
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name"> Name:</label>
+          </div>
+          <div class="rightTab">
+            <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required  autofocus/>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email"> Email:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter your Email"
+              class="input-field"
+            />
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="department" id="department-label"> Department:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              type="text"
+              name="department"
+              id="department"
+              placeholder="Enter your Department"
+              required
+              class="input-field"
+            />
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="level" id="Level-label"> Level:</label>
+          </div>
+          <div class="rightTab">
+            <ul style="list-style: none;">
+              <li class="radio">
+                <label>
+                  Aspirant
+                  <input
+                    type="radio"
+                    name="radio-buttons"
+                    value="1"
+                    class="level"/>
+                </label>
+              </li>
+              <li class="radio">
+                <label >
+                  100
+                  <input
+                    type="radio"
+                    name="radio-buttons"
+                    value="2"
+                    class="level"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  200
+                  <input
+                    type="radio"
+                    name="radio-buttons"
+                    value="3"
+                    class="level"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  300
+                  <input
+                    type="radio"
+                    name="radio-buttons"
+                    value="4"
+                    class="level"
+                    id="300"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  400
+                  <input
+                    type="radio"
+                    name="radio-buttons"
+                    value="5"
+                    class="level"
+                     />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  500
+                  <input
+                    type="radio"
+                    name="radio-buttons"
+                    value="6"
+                    class="level"/>
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  600
+                  <input
+                    type="radio"
+                    name="radio-buttons"
+                    value="7"
+                    class="level"
+                    id="600"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label for="Graduate">
+                  Graduate
+                  <input
+                    type="radio"
+                    name="radio-buttons"
+                    value="3"
+                    class="level"
+                  />
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age"> Age:</label>
+          </div>
+          <div class="rightTab">
+            <input
+              type="number"
+              name="age"
+              id="number"
+              class="input-field"
+              min="16"
+              max="70" placeholder="Age"
+            />
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="userRating">
+            Would you recommend ABSU Community to a friend?</label
+            >
+          </div>
+          <div class="rightTab">
+            <ul style="list-style: none;">
+              <li class="radio">
+                <label>
+                   <input class="userRatings"
+                    type="radio"
+                    name="radio-buttons"
+                    value="1"
+                    /> Definitely
+                </label>
+              </li>
+              <li class="radio"
+                <label>
+                  Maybe
+                  <input 
+                   class="userRatings"
+                    type="radio"
+                    name="radio-buttons"
+                    value="2" />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Not Sure
+                  <input 
+                  class="userRatings"
+                    type="radio"
+                    name="radio-buttons"
+                    value="3" />
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="most-like"
+              >What do you like most in ABSU Community:</label
+            >
+          </div>
+          <div class="rightTab">
+            <select id="most-like" class="dropdown" name="mostlike">
+              <option disabled selected value="">Select an option</option>
+              <option value="Gists">Gists</option>
+              <option value="News">News</option>
+              <option value="Adverts">Adverts</option>
+              <option value="Promotion">Promotion</option>
+              <option value="Admissioninfo">Admission Infos</option>
+            </select>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="preferences">
+              Things that should be improved in the future
+              <br />
+              (check all that apply):
+            </label>
+          </div>
+          <div class="rightTab">
+            <ul id="preferences" style="list-style: none;">
+              <li class="checkbox">
+                <label>
+                  <input
+                    class="userRatings"
+                    name="prefer"
+                    value="1"
+                    type="checkbox"
+                  />
+                  Gists
+                </label>
+              </li>
+              <li class="checkbox">
+                <label>
+                  <input
+                    class="userRatings"
+                    name="prefer"
+                    value="2"
+                    type="checkbox"
+                  />
+                  News
+                </label>
+              </li>
+              <li class="checkbox">
+                <label>
+                  <input
+                    class="userRatings"
+                    name="prefer"
+                    value="1"
+                    type="checkbox"
+                  />
+                  Gists
+                </label>
+              </li>
+              <li class="checkbox">
+                <label>
+                  <input
+                    class="userRatings"
+                    name="prefer"
+                    value="3"
+                    type="checkbox"
+                  />
+                  Admission Information
+                </label>
+              </li>
+              <li class="checkbox">
+                <label>
+                  <input
+                    class="userRatings"
+                    name="prefer"
+                    value="4"
+                    type="checkbox"
+                  />
+                  Course Materials
+                </label>
+              </li>
+              <li class="checkbox">
+                <label>
+                  <input
+                    class="userRatings"
+                    name="prefer"
+                    value="5"
+                    type="checkbox"
+                  />
+                  Contact Us
+                </label>
+              </li>
+              <li class="checkbox">
+                <label>
+                  <input
+                    class="userRatings"
+                    name="prefer"
+                    value="6"
+                    type="checkbox"
+                  />
+                  Adverts
+                </label>
+              </li>
+              <li class="checkbox">
+                    <label>
+                        <input class="userRatings" name="prefer" value="7" type="checkbox">
+                        Validation method
+                    </label>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+                <label for="comments">Any Comments or Suggestions?</label>
+            </div>
+            <div class="rightTab">
+                <textarea name="comment" id="comments" class="input-field" style="height: 50px;resize:vertical;" placeholder="Enter your comment here..." cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
